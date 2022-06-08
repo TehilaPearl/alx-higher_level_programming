@@ -19,4 +19,4 @@ def replace_in_list(my_list, idx, element):
         index += 1
 
     if idx > index:
-        return 
+        return my_list
