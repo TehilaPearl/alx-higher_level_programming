@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""This module creates a class named BaseGeometry"""
+"""Module to expand BaseGeometry class"""
 
 
-class BaseGeometry:
-    """An class named BaseGeometry
-    Attributes:
-    attr1(area): Raises an exception
-    """
+class BaseGeometry():
+    """class BaseGeometry with method area"""
+    pass
+
     def area(self):
-        """raises an exception"""
+        """Pub Inst Method not implemented"""
         raise Exception("area() is not implemented")
     
