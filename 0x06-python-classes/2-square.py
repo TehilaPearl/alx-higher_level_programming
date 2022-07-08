@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""Module of elaborated class Square"""
+""" creates class Square """
 
 
 class Square:
-    """Square defined class with private attribute size"""
+    """ Square class"""
     def __init__(self, size=0):
-        if isinstance(size, int):
-            if size < 0:
-                raise ValueError("size must be >= 0")
-            else:
-                self.__size = size
-        elif not isinstance(size, int):
+        if type(size) != int:
             raise TypeError("size must be an integer")
-        
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
+            
