@@ -1,4 +1,12 @@
 #!/usr/bin/node
-const list = require('./100-data.js').list;
-console.log(list);
-console.log(list.map((item, index) => item * index));
+const dict = require('./101-data').dict;
+
+const dictnew = {};
+for (const m in dict) {
+  if (dict[m] in dictnew) {
+    dictnew[dict[m]].push(m);
+  } else {
+    dictnew[dict[m]] = [m];
+  }
+}
+console.log(dictnew);
